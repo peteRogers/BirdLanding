@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F52BF612A4EF8EA0090A4D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F52BF602A4EF8EA0090A4D6 /* AppDelegate.swift */; };
+		2F52BF632A4EF8EA0090A4D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F52BF622A4EF8EA0090A4D6 /* ContentView.swift */; };
+		2F52BF672A4EF8EB0090A4D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F52BF662A4EF8EB0090A4D6 /* Assets.xcassets */; };
+		2F52BF6A2A4EF8EB0090A4D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F52BF692A4EF8EB0090A4D6 /* Preview Assets.xcassets */; };
+		2F52BF712A4EF97F0090A4D6 /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F52BF702A4EF97F0090A4D6 /* ARViewModel.swift */; };
+		2F52BF732A4EFA080090A4D6 /* ARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F52BF722A4EFA080090A4D6 /* ARModel.swift */; };
+		2F52BF752A4EFA160090A4D6 /* MovementSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F52BF742A4EFA160090A4D6 /* MovementSystem.swift */; };
+		2F52BF772A4EFA3A0090A4D6 /* DetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F52BF762A4EFA3A0090A4D6 /* DetectionView.swift */; };
+		2F52BF792A4F15F20090A4D6 /* PlaneAnchorEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F52BF782A4F15F20090A4D6 /* PlaneAnchorEntity.swift */; };
+		2F52BF7B2A4F16050090A4D6 /* simd_float4x4+Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F52BF7A2A4F16050090A4D6 /* simd_float4x4+Translation.swift */; };
+		2F52BF7D2A55686E0090A4D6 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F52BF7C2A55686E0090A4D6 /* Animator.swift */; };
+		2F52BF822A55687B0090A4D6 /* sparrowFly.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F52BF7F2A55687B0090A4D6 /* sparrowFly.usdz */; };
+		2F52BF832A55687B0090A4D6 /* sparrowLand.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F52BF802A55687B0090A4D6 /* sparrowLand.usdz */; };
+		2F52BF842A55687B0090A4D6 /* sparrow_Base.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F52BF812A55687B0090A4D6 /* sparrow_Base.usdz */; };
+		2F52BF862A55688B0090A4D6 /* SparrowEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F52BF852A55688B0090A4D6 /* SparrowEntity.swift */; };
+		2F52BF882A562C460090A4D6 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F52BF872A562C460090A4D6 /* Components.swift */; };
+		2F52BF8A2A6016C10090A4D6 /* sparrowTakeOff.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F52BF892A6016C10090A4D6 /* sparrowTakeOff.usdz */; };
+		2F52BF8C2A60B81E0090A4D6 /* sparrowIdleLookAround.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F52BF8B2A60B81E0090A4D6 /* sparrowIdleLookAround.usdz */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F52BF5D2A4EF8EA0090A4D6 /* BirdLanding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdLanding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F52BF602A4EF8EA0090A4D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F52BF622A4EF8EA0090A4D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2F52BF662A4EF8EB0090A4D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F52BF692A4EF8EB0090A4D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2F52BF702A4EF97F0090A4D6 /* ARViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
+		2F52BF722A4EFA080090A4D6 /* ARModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARModel.swift; sourceTree = "<group>"; };
+		2F52BF742A4EFA160090A4D6 /* MovementSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovementSystem.swift; sourceTree = "<group>"; };
+		2F52BF762A4EFA3A0090A4D6 /* DetectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectionView.swift; sourceTree = "<group>"; };
+		2F52BF782A4F15F20090A4D6 /* PlaneAnchorEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneAnchorEntity.swift; sourceTree = "<group>"; };
+		2F52BF7A2A4F16050090A4D6 /* simd_float4x4+Translation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "simd_float4x4+Translation.swift"; sourceTree = "<group>"; };
+		2F52BF7C2A55686E0090A4D6 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		2F52BF7F2A55687B0090A4D6 /* sparrowFly.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = sparrowFly.usdz; sourceTree = "<group>"; };
+		2F52BF802A55687B0090A4D6 /* sparrowLand.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = sparrowLand.usdz; sourceTree = "<group>"; };
+		2F52BF812A55687B0090A4D6 /* sparrow_Base.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = sparrow_Base.usdz; sourceTree = "<group>"; };
+		2F52BF852A55688B0090A4D6 /* SparrowEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparrowEntity.swift; sourceTree = "<group>"; };
+		2F52BF872A562C460090A4D6 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		2F52BF892A6016C10090A4D6 /* sparrowTakeOff.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = sparrowTakeOff.usdz; sourceTree = "<group>"; };
+		2F52BF8B2A60B81E0090A4D6 /* sparrowIdleLookAround.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = sparrowIdleLookAround.usdz; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F52BF5A2A4EF8EA0090A4D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F52BF542A4EF8EA0090A4D6 = {
+			isa = PBXGroup;
+			children = (
+				2F52BF5F2A4EF8EA0090A4D6 /* BirdLanding */,
+				2F52BF5E2A4EF8EA0090A4D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F52BF5E2A4EF8EA0090A4D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F52BF5D2A4EF8EA0090A4D6 /* BirdLanding.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F52BF5F2A4EF8EA0090A4D6 /* BirdLanding */ = {
+			isa = PBXGroup;
+			children = (
+				2F52BF7E2A55687B0090A4D6 /* resources */,
+				2F52BF602A4EF8EA0090A4D6 /* AppDelegate.swift */,
+				2F52BF782A4F15F20090A4D6 /* PlaneAnchorEntity.swift */,
+				2F52BF852A55688B0090A4D6 /* SparrowEntity.swift */,
+				2F52BF7C2A55686E0090A4D6 /* Animator.swift */,
+				2F52BF622A4EF8EA0090A4D6 /* ContentView.swift */,
+				2F52BF702A4EF97F0090A4D6 /* ARViewModel.swift */,
+				2F52BF722A4EFA080090A4D6 /* ARModel.swift */,
+				2F52BF762A4EFA3A0090A4D6 /* DetectionView.swift */,
+				2F52BF742A4EFA160090A4D6 /* MovementSystem.swift */,
+				2F52BF872A562C460090A4D6 /* Components.swift */,
+				2F52BF7A2A4F16050090A4D6 /* simd_float4x4+Translation.swift */,
+				2F52BF662A4EF8EB0090A4D6 /* Assets.xcassets */,
+				2F52BF682A4EF8EB0090A4D6 /* Preview Content */,
+			);
+			path = BirdLanding;
+			sourceTree = "<group>";
+		};
+		2F52BF682A4EF8EB0090A4D6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2F52BF692A4EF8EB0090A4D6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2F52BF7E2A55687B0090A4D6 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				2F52BF7F2A55687B0090A4D6 /* sparrowFly.usdz */,
+				2F52BF802A55687B0090A4D6 /* sparrowLand.usdz */,
+				2F52BF8B2A60B81E0090A4D6 /* sparrowIdleLookAround.usdz */,
+				2F52BF812A55687B0090A4D6 /* sparrow_Base.usdz */,
+				2F52BF892A6016C10090A4D6 /* sparrowTakeOff.usdz */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F52BF5C2A4EF8EA0090A4D6 /* BirdLanding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F52BF6D2A4EF8EB0090A4D6 /* Build configuration list for PBXNativeTarget "BirdLanding" */;
+			buildPhases = (
+				2F52BF592A4EF8EA0090A4D6 /* Sources */,
+				2F52BF5A2A4EF8EA0090A4D6 /* Frameworks */,
+				2F52BF5B2A4EF8EA0090A4D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BirdLanding;
+			productName = BirdLanding;
+			productReference = 2F52BF5D2A4EF8EA0090A4D6 /* BirdLanding.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F52BF552A4EF8EA0090A4D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2F52BF5C2A4EF8EA0090A4D6 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 2F52BF582A4EF8EA0090A4D6 /* Build configuration list for PBXProject "BirdLanding" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F52BF542A4EF8EA0090A4D6;
+			productRefGroup = 2F52BF5E2A4EF8EA0090A4D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F52BF5C2A4EF8EA0090A4D6 /* BirdLanding */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F52BF5B2A4EF8EA0090A4D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F52BF6A2A4EF8EB0090A4D6 /* Preview Assets.xcassets in Resources */,
+				2F52BF8C2A60B81E0090A4D6 /* sparrowIdleLookAround.usdz in Resources */,
+				2F52BF832A55687B0090A4D6 /* sparrowLand.usdz in Resources */,
+				2F52BF672A4EF8EB0090A4D6 /* Assets.xcassets in Resources */,
+				2F52BF842A55687B0090A4D6 /* sparrow_Base.usdz in Resources */,
+				2F52BF822A55687B0090A4D6 /* sparrowFly.usdz in Resources */,
+				2F52BF8A2A6016C10090A4D6 /* sparrowTakeOff.usdz in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F52BF592A4EF8EA0090A4D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F52BF732A4EFA080090A4D6 /* ARModel.swift in Sources */,
+				2F52BF632A4EF8EA0090A4D6 /* ContentView.swift in Sources */,
+				2F52BF882A562C460090A4D6 /* Components.swift in Sources */,
+				2F52BF772A4EFA3A0090A4D6 /* DetectionView.swift in Sources */,
+				2F52BF752A4EFA160090A4D6 /* MovementSystem.swift in Sources */,
+				2F52BF612A4EF8EA0090A4D6 /* AppDelegate.swift in Sources */,
+				2F52BF792A4F15F20090A4D6 /* PlaneAnchorEntity.swift in Sources */,
+				2F52BF7D2A55686E0090A4D6 /* Animator.swift in Sources */,
+				2F52BF862A55688B0090A4D6 /* SparrowEntity.swift in Sources */,
+				2F52BF7B2A4F16050090A4D6 /* simd_float4x4+Translation.swift in Sources */,
+				2F52BF712A4EF97F0090A4D6 /* ARViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2F52BF6B2A4EF8EB0090A4D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F52BF6C2A4EF8EB0090A4D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F52BF6E2A4EF8EB0090A4D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BirdLanding/Preview Content\"";
+				DEVELOPMENT_TEAM = 4NY9EY68HK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tigerClaw.BirdLanding;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F52BF6F2A4EF8EB0090A4D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BirdLanding/Preview Content\"";
+				DEVELOPMENT_TEAM = 4NY9EY68HK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tigerClaw.BirdLanding;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F52BF582A4EF8EA0090A4D6 /* Build configuration list for PBXProject "BirdLanding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F52BF6B2A4EF8EB0090A4D6 /* Debug */,
+				2F52BF6C2A4EF8EB0090A4D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F52BF6D2A4EF8EB0090A4D6 /* Build configuration list for PBXNativeTarget "BirdLanding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F52BF6E2A4EF8EB0090A4D6 /* Debug */,
+				2F52BF6F2A4EF8EB0090A4D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F52BF552A4EF8EA0090A4D6 /* Project object */;
+}
